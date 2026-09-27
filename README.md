@@ -2,6 +2,8 @@
 
 A technical write-up of the architecture behind a multi-portal exam/assessment SaaS platform I've worked on professionally as a full-stack engineer since January 2026. This is **not** the platform's source code — it's my own description of the system design, the trade-offs behind it, and what I'd change, written to be read by other engineers rather than end users. No proprietary code, credentials, or business logic from the original codebase is reproduced here.
 
+**Live product:** [rankotest.com](https://rankotest.com) — built by the team at TalentXminds; this write-up covers architecture I've worked on there, not a solo project.
+
 ## Why this exists
 
 Most of my day-to-day engineering happens inside a private, employer-owned repository, so it can't be shared directly. This repo exists to make that work legible: the actual complexity — six user roles, RBAC across five separate portals, an untrusted code-execution pipeline, Redis-backed rate limiting and caching — without exposing anything I don't have the right to publish.
